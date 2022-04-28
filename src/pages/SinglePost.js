@@ -1,0 +1,38 @@
+import React from "react";
+import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
+import client from "../contentful";
+import "./singelpost.scss";
+
+
+const SinglePost = (props) => {
+  const [post, setPost] = React.useState(null);
+
+  React.useEffect(() => {
+    client
+      .getEntries({
+        content_type: "project",
+        "fields.slug": props.slug,
+      })
+      .then((entries) => {
+        setPost(entries.items[0]);
+      });
+  }, [props.slug]);
+
+  return (
+    <>
+      {/* <img
+        src={post.fields.image.fields.file.url}
+        alt={post.fields.image.fields.Description}
+      /> */}
+      <h1>{post && post.fields.title}</h1>
+      <div className="links"> 
+        {post && documentToReactComponents(post.fields.liveLink)}
+        {post && documentToReactComponents(post.fields.github)}
+      </div>
+      {post && documentToReactComponents(post.fields.shortDescription)}
+      {post && documentToReactComponents(post.fields.descriptionRich)}
+    </>
+  );
+};
+
+export default SinglePost;
