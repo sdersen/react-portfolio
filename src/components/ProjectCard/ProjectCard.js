@@ -1,13 +1,17 @@
 import "./projectCard.scss";
+import { MdKeyboardArrowRight } from "react-icons/md";
 
-function ProjectCard({ title, href, src, desc }) {
+function ProjectCard({ title, href, src, desc, tags }) {
   return (
     <div className="card" href={href}>
       <div className="name-container">
-        <h4>{title}</h4>
+        <h4 className="card-title">{title}</h4>
       </div>
-      <h5>{desc}</h5>
-      <a href={href}>Read more</a>
+      <h5 className="card-desc">{desc}</h5>
+      <p>{tags}</p>
+      <a href={href}>Read more <MdKeyboardArrowRight
+      size="30px"
+      /> </a>
     </div>
   );
 }

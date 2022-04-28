@@ -11,14 +11,14 @@ const MobileNavbar = () => {
   const hamburger = (
     <FiMenu
       className="hamburger-icon"
-      size="26px"
+      size="35px"
       onClick={() => setOpen(!open)}
     />
   );
   const close = (
     <GrClose
       className="hamburger-icon"
-      size="26px"
+      size="35px"
       onClick={() => setOpen(!open)}
     />
   );

@@ -6,6 +6,7 @@ const NavbarLinks = () => {
     <div className="navbar-links">
       <div className="link-container hidden">
         <a href="/contact">Contact</a>
+        <a href="/about">About</a>
         <a href="/">Home</a>
       </div>
     </div>

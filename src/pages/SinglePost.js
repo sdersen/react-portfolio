@@ -24,11 +24,12 @@ const SinglePost = (props) => {
         src={post.fields.image.fields.file.url}
         alt={post.fields.image.fields.Description}
       /> */}
-      <h1>{post && post.fields.title}</h1>
+      <h1 className="title">{post && post.fields.title}</h1>
       <div className="links"> 
         {post && documentToReactComponents(post.fields.liveLink)}
         {post && documentToReactComponents(post.fields.github)}
       </div>
+      {post && documentToReactComponents(post.fields.tags)}
       {post && documentToReactComponents(post.fields.shortDescription)}
       {post && documentToReactComponents(post.fields.descriptionRich)}
     </>
