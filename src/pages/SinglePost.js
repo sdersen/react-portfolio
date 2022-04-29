@@ -19,7 +19,7 @@ const SinglePost = (props) => {
   }, [props.slug]);
 
   return (
-    <>
+    <div className="single-post">
       {/* <img
         src={post.fields.image.fields.file.url}
         alt={post.fields.image.fields.Description}
@@ -32,7 +32,7 @@ const SinglePost = (props) => {
       {post && documentToReactComponents(post.fields.tags)}
       {post && documentToReactComponents(post.fields.shortDescription)}
       {post && documentToReactComponents(post.fields.descriptionRich)}
-    </>
+    </div>
   );
 };
 
