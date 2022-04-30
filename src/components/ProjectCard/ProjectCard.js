@@ -1,16 +1,21 @@
 import "./projectCard.scss";
 import { MdKeyboardArrowRight } from "react-icons/md";
+import { color } from "../../colors";
+
 
 function ProjectCard({ title, href, src, desc, tags }) {
+
+  const borderColor = `${color} solid 2px`;
   return (
-    <div className="card" href={href}>
+    <div className="card" style= {{border: borderColor}}>
       <div className="name-container">
-        <h4 className="card-title">{title}</h4>
+        <h3 className="card-title" style= {{color: color}}>{title}</h3>
       </div>
-      <h5 className="card-desc">{desc}</h5>
+      <h3 className="card-desc">{desc}</h3>
       <p>{tags}</p>
-      <a href={href}>Read more <MdKeyboardArrowRight
+      <a href={href} style= {{color: color}}>Read more <MdKeyboardArrowRight
       size="30px"
+      fill={color}
       /> </a>
     </div>
   );

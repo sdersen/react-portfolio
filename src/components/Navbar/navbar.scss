@@ -16,7 +16,6 @@
     a {
       margin-left: 30px;
       text-decoration: none;
-      color: black;
       font-size: 2rem;
 
     }
@@ -43,23 +42,18 @@
     display: none;
   }
 
-  .close-icon {
-    height: 40px;
-    display: none;
-    position: absolute;
-    top: 0;
-  }
+  // .close-icon {
+  //   height: 40px;
+  //   display: none;
+  //   position: absolute;
+  //   top: 0;
+  // }
 }
 
 .hamburger-icon {
   position: absolute;
   right: 12px;
   z-index: 99;
-}
-
-.profile-icon {
-  position: absolute;
-  right: 45px;
 }
 
 .mobile-navbar {
