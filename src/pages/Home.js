@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import client from "../contentful";
-import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import ProjectCard from "../components/ProjectCard/ProjectCard";
 import "./home.scss";
 import { color } from "../colors";
@@ -17,21 +16,19 @@ const Home = () => {
         setPosts(entries.items);
       });
   }, []);
-
+  console.log(posts);
   return (
     <div>
       <h1>SOFIA DERSÈN</h1>
       <h2>Web Developer</h2>
 
       <section className="header">
-        <div className="right-header" style={{backgroundColor: color}}></div>
-        {/* <img
-          src="https://source.unsplash.com/_UeY8aTI6d0"
-          alt="hands writing on a silver laptop"
-        ></img> */}
+        <div className="right-header" style={{ backgroundColor: color }}></div>
       </section>
       <section>
-        <h3 className="projects-text" style= {{color: color}}>Projects</h3>
+        <h3 className="projects-text" style={{ color: color }}>
+          Projects
+        </h3>
         <div className="projects">
           {posts &&
             posts.map((post, i) => {
@@ -41,10 +38,8 @@ const Home = () => {
                     className="card"
                     title={post.fields.title}
                     href={`posts/${post.fields.slug}`}
-                    desc={documentToReactComponents(
-                      post.fields.shortDescription
-                    )}
-                    tags={documentToReactComponents(post.fields.tags)}
+                    desc={post.fields.shortDescription}
+                    tags={post.fields.tags}
                   />
                 </div>
               );

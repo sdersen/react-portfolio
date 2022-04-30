@@ -4,6 +4,8 @@
   height: 190px;
   padding: 20px;
   margin: 20px;
+  display: flex;
+  flex-direction: column;
 
   a {
     text-decoration: none;

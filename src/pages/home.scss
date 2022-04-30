@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@200;300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@200;300;400;500;600;700;800&display=swap");
 
 h1 {
   position: absolute;
-  top: 15%;
+  top: 20%;
   left: 5%;
   font-size: 5rem;
   color: white;
   text-align: left;
   margin: 0;
-  font-weight:600;
+  font-weight: 600;
 
   @media only screen and (max-width: 700px) {
     font-size: 4rem;
@@ -16,7 +16,7 @@ h1 {
 }
 h2 {
   position: absolute;
-  top: 27%;
+  top: 31%;
   left: 5%;
   color: white;
   text-align: left;
@@ -26,11 +26,11 @@ h2 {
   @media only screen and (max-width: 700px) {
     font-size: 3rem;
   }
-  @media only screen and (max-width: 540px) {
-    top: 37%;
+  @media only screen and (max-width: 512px) {
+    top: 41%;
   }
 }
-.projects-text{
+.projects-text {
   text-align: left;
   font-size: 3rem;
   margin-bottom: 20px;
@@ -55,8 +55,9 @@ h2 {
   justify-content: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  margin-bottom: 30px;
 
-  .card{
+  .card {
     margin-bottom: 20px;
   }
 }
