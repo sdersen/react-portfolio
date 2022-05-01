@@ -1,0 +1,27 @@
+.contact{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    min-height: 600px;
+
+    h1{
+        position: relative;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    h3, h4{
+        margin: 0;
+    }
+    h3{
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+    h4{
+        font-size: 1.5rem;
+        font-weight: 300;
+    }
+    .social-icon{
+        margin: 20px;
+        cursor: pointer;
+    }
+}

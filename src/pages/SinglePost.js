@@ -28,15 +28,16 @@ const SinglePost = (props) => {
         {post && documentToReactComponents(post.fields.liveLink)}
         {post && documentToReactComponents(post.fields.github)}
       </div>
+      <p className="tags">{post && post.fields.tags}</p>
       <img
         src={post && post.fields.image2.fields.file.url}
         alt={post && post.fields.image2.fields.Description}
       />
       <div className="text-container">
         <h3>{post && post.fields.shortDescription}</h3>
-        <p>{post && post.fields.tags}</p>
         {post && documentToReactComponents(post.fields.descriptionRich)}
       </div>
+      
     </div>
   );
 };
