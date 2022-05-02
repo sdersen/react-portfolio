@@ -2,12 +2,16 @@
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 5%;
-    min-height: 600px;
+    min-height: 543px;
 
     h1{
         position: relative;
         text-align: center;
         margin-bottom: 50px;
+
+        @media only screen and (max-width: 700px) {
+            top: 0px;
+          }
     }
     h3, h4{
         margin: 0;

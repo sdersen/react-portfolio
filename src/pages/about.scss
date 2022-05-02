@@ -1,0 +1,16 @@
+.about {
+  min-height: 560px;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+
+  h1 {
+    position: relative;
+    text-align: center;
+    margin-bottom: 50px;
+
+    @media only screen and (max-width: 700px) {
+      top: 0px;
+    }
+  }
+}

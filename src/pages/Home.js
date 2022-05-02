@@ -21,11 +21,10 @@ const Home = () => {
     <div>
       <h1>SOFIA DERSÈN</h1>
       <h2>Web Developer</h2>
-
       <section className="header">
         <div className="right-header" style={{ backgroundColor: color }}></div>
       </section>
-      <section>
+      <section style={{ maxWidth:"1440px"}}>
         <h3 className="projects-text" style={{ color: color }}>
           Projects
         </h3>

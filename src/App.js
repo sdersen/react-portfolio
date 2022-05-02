@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-
+import NotFound from "./pages/NotFound";
 import { Router } from "@gatsbyjs/reach-router";
 import Home from "./pages/Home";
 import SinglePost from "./pages/SinglePost";
@@ -19,7 +19,7 @@ function App() {
         <SinglePost path="/posts/:slug" />
         <Contact path="/contact" />
         <About path="/about" />
-
+        <NotFound default />
       </Router>
       <Footer/>
     </div>

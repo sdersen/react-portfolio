@@ -4,6 +4,7 @@ import client from "../contentful";
 import "./singelpost.scss";
 import { color } from "../colors";
 
+
 const SinglePost = (props) => {
   const [post, setPost] = useState(null);
 
