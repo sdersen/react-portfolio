@@ -2,8 +2,7 @@ import "./projectCard.scss";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { color } from "../../colors";
 
-
-function ProjectCard({ title, href, src, desc, tags }) {
+function ProjectCard({ title, href, desc, tags }) {
 
   const borderColor = `${color} solid 2px`;
   return (

@@ -4,7 +4,6 @@ import NavbarLinks from "./NavbarLinks";
 import { FiMenu } from "react-icons/fi";
 import { FiX } from "react-icons/fi";
 import { color } from "../../colors";
-
 import { useState } from "react";
 
 const MobileNavbar = () => {

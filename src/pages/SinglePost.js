@@ -19,7 +19,6 @@ const SinglePost = (props) => {
       });
   }, [props.slug]);
 
-  console.log(post);
   return (
     <div className="single-post">
       <h1 className="title" style={{ color: color }}>

@@ -1,10 +1,9 @@
 .navbar-links {
   display: flex;
   width: 100%;
-  padding-top: 10px;
+  padding-top: 5px;
   padding-bottom: 10px;
   padding-right: 20px;
-
 
   .link-container {
     display: flex;
@@ -17,15 +16,14 @@
       margin-left: 30px;
       text-decoration: none;
       font-size: 2rem;
-
     }
     @media only screen and (max-width: 768px) {
       flex-direction: column;
       align-items: flex-end;
       position: absolute;
       width: 100%;
-      top: 23px;
-      right: -21px;
+      top: 35px;
+      right: 0;
       background-color: white;
       padding-top: 5%;
       padding-right: 5%;
@@ -41,13 +39,6 @@
     position: relative;
     display: none;
   }
-
-  // .close-icon {
-  //   height: 40px;
-  //   display: none;
-  //   position: absolute;
-  //   top: 0;
-  // }
 }
 
 .hamburger-icon {
@@ -61,11 +52,6 @@
   height: 44px;
   z-index: 99;
   background-color: white;
-
-  .navbar-logo {
-    margin-left: 20px;
-    width: 129px;
-  }
 
   .profile-hamburger-icons {
     display: flex;
@@ -84,10 +70,5 @@
   justify-content: space-between;
   @media only screen and (max-width: 768px) {
     display: none;
-  }
-
-  .navbar-logo {
-    padding-left: 24px;
-    width: 175px;
   }
 }

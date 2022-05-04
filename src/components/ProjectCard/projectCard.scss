@@ -1,11 +1,15 @@
 .card {
   border-radius: 20px;
-  width: 270px;
+  width: 330px;
   height: 190px;
   padding: 20px;
   margin: 20px;
   display: flex;
   flex-direction: column;
+
+  @media only screen and (max-width: 768px) {
+    width: 270px;
+  }
 
   a {
     text-decoration: none;

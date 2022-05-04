@@ -16,7 +16,7 @@ const Home = () => {
         setPosts(entries.items);
       });
   }, []);
-  console.log(posts);
+  
   return (
     <div>
       <h1>SOFIA DERSÈN</h1>
@@ -24,7 +24,7 @@ const Home = () => {
       <section className="header">
         <div className="right-header" style={{ backgroundColor: color }}></div>
       </section>
-      <section style={{ maxWidth:"1440px"}}>
+      <section >
         <h3 className="projects-text" style={{ color: color }}>
           Projects
         </h3>

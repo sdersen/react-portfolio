@@ -3,6 +3,7 @@
   margin-right: 10%;
   margin-bottom: 50px;
   max-width: 1300px;
+  min-height: 610px;
 
   @media only screen and (max-width: 700px) {
     margin-left: 5%;
@@ -19,6 +20,7 @@
     text-decoration: none;
     font-size: 1.3rem;
     font-weight: 700;
+    margin: 20px;
     color: black;
     cursor: pointer;
   
@@ -27,12 +29,7 @@
     font-weight: 900;
   }
 }
-.link-container{
-  display: flex;
-  align-items: center;  
-  margin: 20px;
-    margin-bottom: 0;
-}
+
 .tags {
   text-align: center;
 }

@@ -2,8 +2,6 @@ import React from "react";
 import "./about.scss";
 import { color } from "../colors";
 
-
-
 const About = (props) => {
   return (
     <section className="about">
